@@ -69,6 +69,12 @@ if (!isset($_SESSION['nome'])) {
 
   <div class="main-banner" id="top" style=" background: linear-gradient(135deg, #6b73ff, #5d61b1); padding: 0px 0px 120px;}">
   </div>
+ <?php if (isset($_GET['inserimento']) && $_GET['inserimento'] === 'ok'): ?>
+  <div class="alert alert-success alert-dismissible fade show text-center" role="alert">
+  ✅ Lezione salvata con successo!
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<?php endif; ?>
 
  <div class="welcome-banner text-center py-5">
   <div class="container">
